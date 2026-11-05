@@ -1,0 +1,25 @@
+
+import numpy as np
+import pandas as pd
+
+# Create NumPy array
+marks = np.array([75, 85, 90, 65, 95])
+
+# Statistical calculations
+print("Mean Marks:", np.mean(marks))
+print("Median Marks:", np.median(marks))
+print("Maximum Marks:", np.max(marks))
+print("Minimum Marks:", np.min(marks))
+
+# Create DataFrame
+df = pd.DataFrame({
+    "Student": ["A", "B", "C", "D", "E"],
+    "Marks": marks
+})
+
+print("\nStudent Records:")
+print(df)
+
+# Students scoring more than 80
+print("\nStudents scoring more than 80:")
+print(df[df["Marks"] > 80])
